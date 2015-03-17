@@ -1,0 +1,8 @@
+PureFORM_CodeInject
+0:0:1:414
+SetGadgetText(#InfoField,  "")
+SendMessage_(GadgetID(#InfoField), #EM_SETTEXTMODE, #TM_PLAINTEXT, 0)
+SetGadgetFont(#InfoField, FontID(LoadFont(#PB_Any, "Lucida Console", 8)))
+SetGadgetText(#InfoField,  "...Zere should be some info 'bout project...")
+SmartWindowRefresh(#MainWindow, #True)
+SetWindowLong_(WindowID(#MainWindow),#GWL_EXSTYLE,GetWindowLong_(WindowID(#MainWindow), #GWL_EXSTYLE)|#WS_EX_COMPOSITED)
