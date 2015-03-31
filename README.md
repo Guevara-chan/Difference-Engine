@@ -3,8 +3,8 @@
 Was never flagged by AVs so far.
 
 ##/Featurae/:
--	Fully native implementation with no external dependencies. Proven to work on XP and beyond.
--	Extensive commandline automation support. Could be used as classical shell utility.
+-	Fully native implementation with no external dependencies. [i]Proven to work on XP and beyond.[/i]
+-	Extensive commandline automation support. [i]Could be used as classical shell utility.[/i]
 -	Rather minimalistic Win98-inspired GUI.
 -	XCopy-based installation.
 
