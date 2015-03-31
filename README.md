@@ -10,4 +10,4 @@ Was never flagged by AVs so far.
 
 ## /Reassembling/:
 **Difference Engine** is written completely in *PureBasic v4.40*, though compatible with *5.2x (LTS)*.  
-To rebuild project use 'Main.pb' as root sourcefile for main .exe and 'Template.pb' to compile 'Template.App.'
+To rebuild constructor use 'Main.pb' as root sourcefile and compile 'Template.pb' to 'Resources\Template.App.'
