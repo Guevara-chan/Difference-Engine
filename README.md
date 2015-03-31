@@ -5,4 +5,5 @@ Was never flagged by AVs so far.
 ##/Featurae/:
 -	Fully native implementation with no external dependencies.
 -	Extensive commandline automation support.
--	Minimalistic Win98-style GUI.
+-	Rather minimalistic Win98-inspired GUI.
+-	XCopy-based installation.
