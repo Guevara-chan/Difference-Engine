@@ -7,3 +7,7 @@ Was never flagged by AVs so far.
 -	Extensive commandline automation support.
 -	Rather minimalistic Win98-inspired GUI.
 -	XCopy-based installation.
+
+## /Reassembling/:
+**Difference Engine** is written completely in *PureBasic v4.40*, though compatible with *5.2x (LTS)*.
+To rebuild project use 'Main.pb' as root sourcefile for main .exe and 'Template.pb' to compile 'Template.App.'
