@@ -10,5 +10,5 @@ Was never flagged by AVs so far.
 
 ## /Reassembling/:
 **Difference Engine** is written completely in *PureBasic v4.40*, though compatible with *5.2x (LTS)*.  
-It relies on 'Resources\Template.app' shim to generate outcoming executibles.  
+It relies on '.\resources\template.app' shim to generate outcoming executibles.  
 To rebuild constructor itself use 'Main.pb' as root sourcefile.
