@@ -4,8 +4,8 @@ Was never flagged by AVs so far.
 
 ##/Featurae/:
 -	Fully native implementation with no external dependencies. *Proven to work on XP and beyond.*
+-	Rather minimalistic Win98-inspired GUI. *Everything needed is compacted into single window.*
 -	Extensive commandline automation support. *Could be used as classical shell utility.*
--	Rather minimalistic Win98-inspired GUI. *Everything is compacted into single window.*
 -	XCopy-based installation.
 
 ## /Reassembling/:
