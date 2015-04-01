@@ -14,3 +14,4 @@ It relies on `.\resources\template.app` shim file to generate outcoming executib
 To rebuild constructor compile 'Main.pb' as root sourcefile.
 
 ## /Brief samples of interfacing/:
+![Core setup](https://cloud.githubusercontent.com/assets/8768470/6955268/d1dfb492-d8e3-11e4-8bb5-07981c14933d.PNG)
