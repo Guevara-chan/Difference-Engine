@@ -3,20 +3,25 @@
 ; Developed in 2010 by Guevara-chan
 ; -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
 
-; TODO[
+; TO.DO[
 ; Добавить возможность отключения валидации файлов.
 ; Добавить возможность отключения резервного копирования.
 ; Добавить поддержку множественных файлов для патчинга.
 ; Улучшить возможность ручного задания шаблона поиска.
 ; Добавить запрос на перезапись существующего файла.
 ; Улучшить интерфейс.
-; ]TODO
+; ]TO.DO
 
 IncludeFile "DiffGUI.pb"
 EnableExplicit
 Import "" ; Kernel32.lib
 AttachConsole(dwProcessId)
 EndImport
+
+CompilerIf #PB_Compiler_Version => 540
+UseCRC32Fingerprint() ; Legacy codec.
+UseMD5Fingerprint()   ; Legacy codec.
+CompilerEndIf
 
 ;{ Definitions
 ; --Enumerations--
@@ -186,6 +191,12 @@ EndIf
 EndProcedure
 ;}
 ;{ --Patching process--
+CompilerIf #PB_Compiler_Version => 560 ; Не было печали - апдейтов накачали.
+Macro CRC32FileFingerprint(File) ; Pseudo-procedure.
+Val("$"+FileFingerprint(File, #PB_Cipher_CRC32))
+EndMacro
+CompilerEndIf
+
 Macro ShowError(ErrorMsg) ; Pseudo-procedure.
 ExitCode = -1 : MessageOut("Critical error:", ErrorMsg, #MB_ICONERROR, #RedLetters)
 EndMacro
@@ -551,7 +562,7 @@ EndSelect
 Case #PB_Event_CloseWindow : End
 EndSelect
 ForEver
-; IDE Options = PureBasic 5.22 LTS (Windows - x86)
+; IDE Options = PureBasic 5.70 LTS (Windows - x86)
 ; Folding = 74f--
 ; UseIcon = ..\Resources\gear-icon.ico
 ; Executable = ..\Difference Engine.exe
