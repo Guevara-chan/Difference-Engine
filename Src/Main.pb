@@ -191,7 +191,7 @@ EndIf
 EndProcedure
 ;}
 ;{ --Patching process--
-CompilerIf #PB_Compiler_Version => 560 ; Не было печали - апдейтов накачали.
+CompilerIf #PB_Compiler_Version => 540 ; Не было печали - апдейтов накачали.
 Macro CRC32FileFingerprint(File) ; Pseudo-procedure.
 Val("$"+FileFingerprint(File, #PB_Cipher_CRC32))
 EndMacro
@@ -567,3 +567,4 @@ ForEver
 ; UseIcon = ..\Resources\gear-icon.ico
 ; Executable = ..\Difference Engine.exe
 ; CurrentDirectory = ..\
+; Compiler = PureBasic 5.40 LTS (Windows - x86)
