@@ -1,3 +1,6 @@
+IncludeFile "AutoResizeGadget.pbi"
+UseModule GadgetResize
+
 ;{- Enumerations / DataSections
 ;{ Windows
 Enumeration
@@ -73,29 +76,29 @@ Procedure OpenWindow_MainWindow()
     StringGadget(#RegistryField, 5, 295, 315, 20, "", #PB_String_BorderLess|#WS_BORDER)
     TextGadget(#Text_23, 5, 275, 315, 20, "Registry pathholder:", #PB_Text_Center)
     ; Gadget Resizing
-    PureRESIZE_SetGadgetResize(#Text_0, 1, 1, 1, 0)
-    PureRESIZE_SetGadgetResize(#EtaloneFile, 1, 1, 1, 0)
-    PureRESIZE_SetGadgetResize(#Button_Etalone, 0, 1, 1, 0)
-    PureRESIZE_SetGadgetResize(#Text_3, 1, 1, 1, 0)
-    PureRESIZE_SetGadgetResize(#PatchedFile, 1, 1, 1, 0)
-    PureRESIZE_SetGadgetResize(#Button_Patched, 0, 1, 1, 0)
-    PureRESIZE_SetGadgetResize(#Text_7, 1, 1, 1, 0)
-    PureRESIZE_SetGadgetResize(#OutputFile, 1, 1, 1, 0)
-    PureRESIZE_SetGadgetResize(#Button_Output, 0, 1, 1, 0)
-    PureRESIZE_SetGadgetResize(#Text_10, 1, 1, 1, 0)
-    PureRESIZE_SetGadgetResize(#InfoField, 1, 1, 1, 1)
-    PureRESIZE_SetGadgetResize(#Button_Generate, 1, 0, 0, 1)
-    PureRESIZE_SetGadgetResize(#Button_Quit, 0, 0, 1, 1)
-    PureRESIZE_SetGadgetResize(#Button_About, 0, 0, 0, 0)
-    PureRESIZE_CenterGadget(#Button_About, 1, 0)
-    PureRESIZE_SetGadgetResize(#Text_15, 1, 1, 1, 0)
-    PureRESIZE_SetGadgetResize(#TitleField, 1, 1, 1, 0)
-    PureRESIZE_SetGadgetResize(#IconFile, 1, 1, 1, 0)
-    PureRESIZE_SetGadgetResize(#Text_18, 1, 1, 1, 0)
-    PureRESIZE_SetGadgetResize(#Button_Icon, 0, 1, 1, 0)
-    PureRESIZE_SetGadgetResize(#Text_20, 1, 1, 1, 0)
-    PureRESIZE_SetGadgetResize(#TargetField, 1, 1, 1, 0)
-    PureRESIZE_SetGadgetResize(#RegistryField, 1, 1, 1, 0)
+    AddGadget(#MainWindow, #Text_0, #GR_LEFT | #GR_RIGHT | #GR_TOP)
+    AddGadget(#MainWindow, #EtaloneFile, #GR_LEFT | #GR_RIGHT | #GR_TOP)
+    AddGadget(#MainWindow, #Button_Etalone, #GR_RIGHT | #GR_TOP)
+    AddGadget(#MainWindow, #Text_3, #GR_LEFT | #GR_RIGHT | #GR_TOP)
+    AddGadget(#MainWindow, #PatchedFile, #GR_LEFT | #GR_RIGHT | #GR_TOP)
+    AddGadget(#MainWindow, #Button_Patched, #GR_RIGHT | #GR_TOP)
+    AddGadget(#MainWindow, #Text_7, #GR_LEFT | #GR_RIGHT | #GR_TOP)
+    AddGadget(#MainWindow, #OutputFile, #GR_LEFT | #GR_RIGHT | #GR_TOP)
+    AddGadget(#MainWindow, #Button_Output, #GR_RIGHT | #GR_TOP)
+    AddGadget(#MainWindow, #Text_10, #GR_LEFT | #GR_RIGHT | #GR_TOP)
+    AddGadget(#MainWindow, #InfoField, #GR_LEFT | #GR_RIGHT | #GR_TOP | #GR_BOTTOM)
+    AddGadget(#MainWindow, #Button_Generate, #GR_LEFT | #GR_BOTTOM)
+    AddGadget(#MainWindow, #Button_Quit, #GR_RIGHT | #GR_BOTTOM)
+    AddGadget(#MainWindow, #Button_About, #GR_HCENTER)
+    AddGadget(#MainWindow, #Text_15, #GR_LEFT | #GR_RIGHT | #GR_TOP)
+    AddGadget(#MainWindow, #TitleField, #GR_LEFT | #GR_RIGHT | #GR_TOP)
+    AddGadget(#MainWindow, #IconFile, #GR_LEFT | #GR_RIGHT | #GR_TOP)
+    AddGadget(#MainWindow, #Text_18, #GR_LEFT | #GR_RIGHT | #GR_TOP)
+    AddGadget(#MainWindow, #Button_Icon, #GR_RIGHT | #GR_TOP)
+    AddGadget(#MainWindow, #Text_20, #GR_LEFT | #GR_RIGHT | #GR_TOP)
+    AddGadget(#MainWindow, #TargetField, #GR_LEFT | #GR_RIGHT | #GR_TOP)
+    AddGadget(#MainWindow, #RegistryField, #GR_LEFT | #GR_RIGHT | #GR_TOP)
+    AddGadget(#MainWindow, #Text_23, #GR_LEFT | #GR_RIGHT | #GR_TOP)
     PureRESIZE_SetGadgetResize(#Text_23, 1, 1, 1, 0)
     ; Gadget Fonts
     SetGadgetFont(#Text_0, LoadFont(#Font_Text_0, "Palatino Linotype", 10, #PB_Font_Bold|#PB_Font_HighQuality))
@@ -122,7 +125,5 @@ Procedure OpenWindow_MainWindow()
 EndProcedure
 
 ; IDE Options = PureBasic 5.31 (Windows - x86)
-; CursorPosition = 112
-; FirstLine = 71
 ; Folding = -
 ; EnableXP
