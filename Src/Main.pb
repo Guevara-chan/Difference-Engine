@@ -563,7 +563,6 @@ EndSelect
 ForEver
 ; IDE Options = PureBasic 5.31 (Windows - x86)
 ; Folding = 74f--
-; EnableUnicode
 ; UseIcon = ..\Resources\gear-icon.ico
 ; Executable = ..\Difference Engine.exe
 ; CurrentDirectory = ..\
