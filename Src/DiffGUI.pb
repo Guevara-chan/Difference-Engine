@@ -110,7 +110,7 @@ Procedure OpenWindow_MainWindow()
     SetGadgetFont(#Text_20, LoadFont(#Font_Text_20, "Palatino Linotype", 10, #PB_Font_Bold|#PB_Font_HighQuality))
     SetGadgetFont(#Text_23, LoadFont(#Font_Text_23, "Palatino Linotype", 10, #PB_Font_Bold|#PB_Font_HighQuality))
     ; Window Minimum Size
-    PureRESIZE_SetWindowMinimumSize(#MainWindow, 325, 495)
+    WindowBounds(#MainWindow, 325, 495, #PB_Ignore, #PB_Ignore) 
     ;
     SetGadgetText(#InfoField,  "")
     SendMessage_(GadgetID(#InfoField), #EM_SETTEXTMODE, #TM_PLAINTEXT, 0)
@@ -121,6 +121,8 @@ Procedure OpenWindow_MainWindow()
   EndIf
 EndProcedure
 
-; IDE Options = PureBasic 5.00 Beta 3 (Windows - x86)
+; IDE Options = PureBasic 5.31 (Windows - x86)
+; CursorPosition = 112
+; FirstLine = 71
 ; Folding = -
 ; EnableXP
