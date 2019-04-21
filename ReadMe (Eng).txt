@@ -2,7 +2,7 @@
 Title: Difference Engine
 Version: v0.35 (Alpha)
 Distribution: FreeWare OpenSource
-Dev. environment: PureBASIC v4.40
+Dev. environment: PureBASIC v5.20
 *-=-=-=-=-==-=-=-=-=-=-=-=-=-=-=-=-*
 
 ~Available command line arguments:
