@@ -562,7 +562,8 @@ Case #PB_Event_CloseWindow : End
 EndSelect
 ForEver
 ; IDE Options = PureBasic 5.31 (Windows - x86)
-; Folding = 74f--
+; Folding = 74---
+; EnableUnicode
 ; UseIcon = ..\Resources\gear-icon.ico
 ; Executable = ..\Difference Engine.exe
 ; CurrentDirectory = ..\

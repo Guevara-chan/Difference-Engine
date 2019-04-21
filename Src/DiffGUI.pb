@@ -50,6 +50,7 @@ Enumeration
 EndEnumeration
 ;}
 ;}
+
 Procedure OpenWindow_MainWindow()
   If OpenWindow(#MainWindow, 474, 251, 325, 495, "Difference engine:", #PB_Window_SystemMenu|#PB_Window_SizeGadget|#PB_Window_MinimizeGadget|#PB_Window_TitleBar|#PB_Window_Invisible|#PB_Window_MaximizeGadget|#PB_Window_ScreenCentered)
     TextGadget(#Text_0, 5, 5, 315, 20, "Etalone file:", #PB_Text_Center)
@@ -99,7 +100,6 @@ Procedure OpenWindow_MainWindow()
     AddGadget(#MainWindow, #TargetField, #GR_LEFT | #GR_RIGHT | #GR_TOP)
     AddGadget(#MainWindow, #RegistryField, #GR_LEFT | #GR_RIGHT | #GR_TOP)
     AddGadget(#MainWindow, #Text_23, #GR_LEFT | #GR_RIGHT | #GR_TOP)
-    PureRESIZE_SetGadgetResize(#Text_23, 1, 1, 1, 0)
     ; Gadget Fonts
     SetGadgetFont(#Text_0, LoadFont(#Font_Text_0, "Palatino Linotype", 10, #PB_Font_Bold|#PB_Font_HighQuality))
     SetGadgetFont(#Text_3, LoadFont(#Font_Text_3, "Palatino Linotype", 10, #PB_Font_Bold|#PB_Font_HighQuality))
@@ -125,5 +125,5 @@ Procedure OpenWindow_MainWindow()
 EndProcedure
 
 ; IDE Options = PureBasic 5.31 (Windows - x86)
-; Folding = -
+; Folding = x
 ; EnableXP
