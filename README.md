@@ -9,7 +9,7 @@ It's rather simple to put in use without any prior knowledge of binary alteratio
 -	XCopy-based installation.
 
 ## /Reassembling/:
-**Difference Engine** is written completely in [PureBasic v4.40](http://purebasic.com), though compatible with *5.7x (LTS)*.  
+**Difference Engine** was written completely in [PureBasic v5.20](http://purebasic.com), though compatible with *5.7x (LTS)*.  
 It relies on `.\resources\template.app` shim file to generate outcoming executibles.  
 To rebuild constructor app - compile `Main.pb` as root sourcefile.
 
